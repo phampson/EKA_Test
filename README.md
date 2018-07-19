@@ -8,6 +8,16 @@ Your objective, as a candidate, will be to develop a test suite to cover feature
 ##Directions
 As mentioned in the introduction, we would like you to develop a test suite that complements the workflow that we've described below.
 
+To start with, we've put together the config necessary for you to start writing your tests. To set up, follow these instructions:
+
+1. Clone the repository [https://github.com/YOO629/eka-qa-challenge-1.git]
+2. Install packages using `yarn install`
+3. Run `node nightwatch.conf.js`
+4. Verify things are running okay by running `npm test`
+5. One test should run, and it should pass
+
+If you get stuck on any of the instructions above, e-mail us and we will do our best to help you get through it if reasonable.
+
 If you are not familiar with Nightwatch.js, you will have to go through their docs and figure out how to put together tests on your own. This may seem harsh, but we need to know that you can be a trailblazer when the need arises.
 
 Once you develop your tests and write your code in this project, create a Github repository for your work and push your work to the remote repo. Then, e-mail us back in the thread in which you received this challenge with the url to your Github repo.
@@ -15,6 +25,7 @@ Once you develop your tests and write your code in this project, create a Github
 There are a few requirements that we will impose on the tests that you write -- the most important being that you compose them using **Nightwatch.js**. Also, your tests should cover the workflow described below.
 
 ##Workflow
+
 The basic workflow is as such:
 
 1. User goes to www.go-eka.com
