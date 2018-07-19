@@ -1,11 +1,11 @@
-#EKA QA CHALLENGE
+# EKA QA CHALLENGE
 
-##Introduction
+## Introduction
 The objective of this challenge from the company perspective, is to get a good grasp of the technical ability of a candidate. To do so, we would like you to build a complementing suite of tests using Nightwatch.js so that you can put us on full blast for our company website, which can be found at www.go-eka.com.
 
 Your objective, as a candidate, will be to develop a test suite to cover features that you can find within our site.
 
-##Directions
+## Directions
 As mentioned in the introduction, we would like you to develop a test suite that complements the workflow that we've described below.
 
 If you are not familiar with Nightwatch.js, you will have to go through their docs and figure out how to put together tests on your own. This may seem harsh, but we need to know that you can be a trailblazer when the need arises.
@@ -14,7 +14,7 @@ Once you develop your tests and write your code in this project, create a Github
 
 There are a few requirements that we will impose on the tests that you write -- the most important being that you compose them using **Nightwatch.js**. Also, your tests should cover the workflow described below.
 
-##Workflow
+## Workflow
 The basic workflow is as such:
 
 1. User goes to www.go-eka.com
@@ -26,7 +26,7 @@ The basic workflow is as such:
 This is the basic workflow that we would like you to cover at a minimum. We would also like you to write additional tests (if you have time) so we can get a glimpse into how you approach testing as a whole. If you have time, I would **highly** suggest investing effort into this part of the challenge because this part of the challenge reflects most brightly.
 
 
-##Questions?
+## Questions?
 Treat this as if you just got a steaming pile of code from your favorite developer, and you're writing tests to cover his back. Obviously, if you have questions about some features of the application, you should speak up and ask for clarification.
 
 Questions should be sent out via the e-mail thread that you received this challenge. Don't forget to reply to all.
