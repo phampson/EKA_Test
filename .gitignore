@@ -1,0 +1,6 @@
+node_modules
+tests_output
+reports
+.env
+selenium-debug.log
+yarn-error.log
