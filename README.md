@@ -10,8 +10,8 @@ As mentioned in the introduction, we would like you to develop a test suite that
 
 To start with, we've put together the config necessary for you to start writing your tests. To set up, follow these instructions:
 
-1. Clone the repository [https://github.com/YOO629/eka-qa-challenge-1.git]
-2. Install packages using `yarn install`
+1. Clone the repository (https://github.com/go-eka/eka-qa-challenge-1.git)
+2. Install packages using `npm i`
 3. Run `node nightwatch.conf.js`
 4. Verify things are running okay by running `npm test`
 5. One test should run, and it should pass
@@ -27,16 +27,16 @@ There are a few requirements that we will impose on the tests that you write -- 
 ## Workflow
 The basic workflow is as such:
 
-1. User goes to www.go-eka.com
-2. The EKA logo should be visible
-3. The NavBar elements should be visible (Solutions/Services/Company/Contact Us/etc.)
+1. User goes to www.go-eka.com (This part has already been done for you)
+2. The EKA logo should be visible (This part has already been done for you)
+3. The NavBar elements should be visible (Solutions, Services, Company, Contact Us, etc.)
 4. Clicking on the 'Contact Us' button in the NavBar should bring up a modal with the text 'How can we help?'
 5. When a user enters their email in the #join-mailinglist_input input element and clicks on the #join-mailinglist_btn, it should bring up a modal with the text 'Request a demo'
 
-This is the basic workflow that we would like you to cover at a minimum. We would also like you to write additional tests (if you have time) so we can get a glimpse into how you approach testing as a whole. If you have time, I would **highly** suggest investing effort into this part of the challenge because this part of the challenge reflects most brightly.
+This is the basic workflow that we would like you to cover at a minimum. We would also like you to write additional tests (if you have time) so we can get a glimpse into how you approach testing as a whole. If you have time, I would **highly** suggest investing effort into this part of the challenge because this part of the challenge is where we typically see a lot of variation between candidates (therefore making it a good chance to set your work apart from others').
 
 
 ## Questions?
-Treat this as if you just got a steaming pile of code from your favorite developer, and you're writing tests to cover his back. Obviously, if you have questions about some features of the application, you should speak up and ask for clarification.
+Treat this as if you just got a steaming pile of code from your favorite developer, and you're writing tests to cover their back. As in a normal work environment, if you have questions about some features of the application you should speak up and ask for clarification.
 
 Questions should be sent out via the e-mail thread that you received this challenge. Don't forget to reply to all.
