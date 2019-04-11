@@ -20,8 +20,11 @@ module.exports = {
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "screenshots": {
-        "enabled": false, // if you want to keep screenshots
-        "path": './screenshots' // save screenshots here
+        "enabled": false,
+        "path": './screenshots'
+      },
+      "globals": {
+        "waitForConditionTimeout": 10000,
       },
       "desiredCapabilities": { // use Chrome as the default browser for tests
         "browserName": "chrome",

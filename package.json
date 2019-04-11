@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "EKA QA Challenge",
   "main": "index.js",
-  "scripts": {
-    "test": "nightwatch --config nightwatch.conf.js"
+  "engines": {
+    "node": "8.1.4",
+    "npm": "6.5.0"
   },
-  "author": "",
+  "scripts": {
+    "test": "node_modules/.bin/nightwatch --config nightwatch.conf.js"
+  },
+  "author": "Joseph Yu",
   "license": "ISC",
   "dependencies": {
     "babel-register": "^6.26.0"
