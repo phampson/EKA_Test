@@ -5,6 +5,11 @@ module.exports = {
     return browser
       .url(globals.url)
       .waitForElementVisible('.nav-logo')
+      .waitForElementVisible('.solutions-link')
+      .waitForElementVisible('.services-link')
+      .waitForElementVisible('.company-link')
+      .waitForElementVisible('.contactus-btn-link')
+      .waitForElementVisible('.login-link')
       .end();
   }
 }
