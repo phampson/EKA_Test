@@ -18,7 +18,7 @@ module.exports = {
   },
   
   'Contact Us displays proper modal when clicked': (browser) => { 
-    browser
+    return browser
       .click('#nav-contact-us')
       .waitForElementVisible('.m-top-60')
       .assert.containsText('.m-top-60', 'HOW CAN WE HELP?')
@@ -26,12 +26,14 @@ module.exports = {
   },
 
   'Mailing list displays proper modal': (browser) => {
-    var testValue = 'test@mail.com'
     return browser
-      //.setValue('input[name=email2]', testValue)
+      .waitForElementVisible('input[name=email2]')
+      //.clearValue('input[name=email2]')
+      // SetValue does not always work, but when it does everything works great!
+      //.setValue('input[name=email2]', 'test@mail.com')
       .submitForm('#join-mailinglist_btn')
       .assert.containsText('#myModalLabel', 'REQUEST A DEMO')
-      //.assert.containsText('input[name="email"]', 'test@mail.com')
+      //.assert.valueContains('input[name="email"]', 'test@mail.com')
       .end();
   }
 }
