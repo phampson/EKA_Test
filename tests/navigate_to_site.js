@@ -22,13 +22,16 @@ module.exports = {
       .click('#nav-contact-us')
       .waitForElementVisible('.m-top-60')
       .assert.containsText('.m-top-60', 'HOW CAN WE HELP?')
-      .click('.close')
+      .click('.close.btn-icon')
   },
 
-  'Mailing list displays proper modal': (browser) => { 
+  'Mailing list displays proper modal': (browser) => {
+    var testValue = 'test@mail.com'
     return browser
-      .submitForm('#join-mailinglist_input')
+      //.setValue('input[name=email2]', testValue)
+      .submitForm('#join-mailinglist_btn')
       .assert.containsText('#myModalLabel', 'REQUEST A DEMO')
+      //.assert.containsText('input[name="email"]', 'test@mail.com')
       .end();
   }
 }
