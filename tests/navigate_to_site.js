@@ -18,7 +18,7 @@ module.exports = {
   },
   
   'Contact Us displays proper modal when clicked': (browser) => { 
-    return browser
+    browser
       .click('#nav-contact-us')
       .waitForElementVisible('.m-top-60')
       .assert.containsText('.m-top-60', 'HOW CAN WE HELP?')
