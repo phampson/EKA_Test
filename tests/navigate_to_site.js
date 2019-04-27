@@ -28,12 +28,12 @@ module.exports = {
   'Mailing list displays proper modal': (browser) => {
     return browser
       .waitForElementVisible('input[name=email2]')
-      //.clearValue('input[name=email2]')
+      .clearValue('input[name=email2]')
       // SetValue does not always work, but when it does everything works great!
-      //.setValue('input[name=email2]', 'test@mail.com')
+      .setValue('input[name=email2]', 'test@mail.com')
       .submitForm('#join-mailinglist_btn')
       .assert.containsText('#myModalLabel', 'REQUEST A DEMO')
-      //.assert.valueContains('input[name="email"]', 'test@mail.com')
+      .assert.valueContains('input[name="email"]', 'test@mail.com')
       .end();
   }
 }
