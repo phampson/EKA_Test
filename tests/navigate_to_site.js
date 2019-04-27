@@ -22,6 +22,13 @@ module.exports = {
       .click('#nav-contact-us')
       .waitForElementVisible('.m-top-60')
       .assert.containsText('.m-top-60', 'HOW CAN WE HELP?')
+      .click('.close')
+  },
+
+  'Mailing list displays proper modal': (browser) => { 
+    return browser
+      .submitForm('#join-mailinglist_input')
+      .assert.containsText('#myModalLabel', 'REQUEST A DEMO')
       .end();
   }
 }
